@@ -1,4 +1,4 @@
-import axios from "axios";
+import reqwest from "reqwest";
 
 const METHOD_KEY = "method";
 const TYPE_KEY = "dataType";

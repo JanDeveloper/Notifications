@@ -8,7 +8,6 @@ import customHistory from "./common/history";
 import store from "./common/store";
 import LoadingSpinner from "./container/LoadingSpinner";
 import HomePage from "./container/HomePage";
-import UserDetail from "./container/UserDetail";
 
 const App = () => {
     return (
@@ -21,11 +20,6 @@ const App = () => {
                             exact
                             component={HomePage}
                             path={ROUTES.HOME}
-                        />
-                        <Route
-                            exact
-                            component={UserDetail}
-                            path={ROUTES.USER}
                         />
                     </Switch>
                 </div>
