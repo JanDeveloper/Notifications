@@ -14,7 +14,7 @@ class Rest {
             [ TYPE_KEY ]: JSON_VALUE,
             [ METHOD_KEY ]: GET
         };
-        return axios(requestOptions);
+        return reqwest(requestOptions);
     }
 }
 

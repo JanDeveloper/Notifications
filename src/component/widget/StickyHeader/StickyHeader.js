@@ -4,7 +4,8 @@ import PropTypes from "prop-types";
 export default class StickyHeader extends React.Component {
 
     static propTypes = {
-        children: PropTypes.element
+        children: PropTypes.element,
+        componentClassName: PropTypes.string
     };
 
     constructor() {
@@ -42,11 +43,12 @@ export default class StickyHeader extends React.Component {
         const setStickyClass = this.state.isSticky
             ? `sticky-container sticky-container--sticky ${setAdditionalClassName}`
             : `sticky-container ${componentClassName}`;
-        return <div
-            className={setStickyClass}
-        >
-            {children}
-        </div>;
+        return (
+            <div
+                className={setStickyClass}
+            >
+                {children}
+            </div>);
     }
 
     getViewportWidth = () => {

@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import Typography from "@material-ui/core/Typography";
 import { withStyles } from "@material-ui/core/styles";
 import StickyHeader from "../../widget/StickyHeader/StickyHeader";
+import uuid from "uuid";
 
 const styles = theme => ({
     root: {
@@ -24,14 +25,16 @@ const Header = ( props ) => {
                     <ul className="menu-navigation">
                         {
                             navItem.map(item => {
-                                return (<Typography
+                                return (
+                                    <Typography
+                                        key={uuid.v4()}
                                         className={props.classes.root}
                                         variant="subheading"
                                         gutterBottom
                                     >
                                         {item}
                                     </Typography>
-                                )
+                                );
                             })
                         }
                     </ul>
