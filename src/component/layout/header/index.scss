@@ -10,6 +10,35 @@
         width: 100%;
         background: white;
         transition: background .25s;
+        display: ruby;
+        z-index: 1000;
+
+
+        .menu-navigation {
+            text-align: center;
+            
+            h3 {
+                color: black;
+            }
+        }
+    }
+
+    .menu-navigation {
+        text-align: center;
+    }
+}
+.wrapper{
+    background: url($imagesPath + "worship.jpg") center center no-repeat;
+    height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+
+    .header-church--sticky {
+        position: fixed;
+        width: 100%;
+        background: white;
+        transition: background .25s;
 
         .menu-navigation {
             text-align: center;
@@ -23,4 +52,23 @@
     .menu-navigation {
         text-align: center;
     }
+}
+.footer {
+    .footer-wrapper {
+        height: 200px;
+        background: #6d6c6c;
+    }
+    .footer-navigation {
+        text-align: center;
+        position: relative;
+        align-items: center;
+        width:300px;
+        margin-left: 300px;
+        
+    h3 {
+        color: black;
+        width: 110px;
+        float: left;
+    }
+}
 }

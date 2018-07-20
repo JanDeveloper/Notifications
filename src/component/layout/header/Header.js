@@ -14,7 +14,7 @@ const styles = theme => ({
     },
 });
 
-const navItem = [ "Home", "Ko smo mi ?", "Vizija", "Sta verujemo", "Rec Pastora", "Aktivnosti", "Humanitarni rad", "Kontakt" ];
+const navItem = [ "Home", "Ko smo mi?", "Vizija", "Šta verujemo", "Reč Pastora", "Aktivnosti", "Humanitarni rad", "Kontakt" ];
 
 const Header = ( props ) => {
     return (
