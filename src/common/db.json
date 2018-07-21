@@ -1,0 +1,76 @@
+{
+    "events": [
+        {
+            "id": "0",
+            "title": "Conference of faith",
+            "date": "16",
+            "month": "july",
+            "content": "Mauris at porta elit. Suspendisse vulputate aliquam bibendum. Nulla aliquet convallis nisl. Vivamus varius mauris sed nunc laoreet sed porttitor enim euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "id": "1",
+            "title": "Welcome",
+            "date": "15",
+            "month": "januar",
+            "content": "Ut quis lorem felis. Ut viverra, nibh vel dignissim convallis, elit nibh dapibus nibh, quis lacinia leo urna a lacus."
+        },
+        
+        {
+            "id": "2",
+            "title": "Nullam in semper dui",
+            "date": "10",
+            "month": "september",
+            "content": "Phasellus at sodales ligula. Duis augue ipsum, pellentesque nec porta ut, dictum eget odio. Aenean nec quam bibendum felis condimentum commodo. Curabitur eget leo mattis diam aliquam laoreet ut vel tellus."
+        },
+        {
+            "id": "3",
+            "title": "Lorem ipsum",
+            "date": "25",
+            "month": "december",
+            "content": "Mauris at porta elit. Suspendisse vulputate aliquam bibendum. Nulla aliquet convallis nisl. "
+        }
+    ],
+
+    "services": [{
+        "id": "0",
+        "title": "Service",
+        "content": "Mauris at porta elit. Suspendisse vulputate aliquam bibendum. Nulla aliquet convallis nisl. Vivamus varius mauris sed nunc laoreet sed porttitor enim euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "day": "Sunday",
+        "hour": "10,00",
+        "photo": "../../../src/www/img/service1.jpg"
+    },
+    {
+        "id": "1",
+        "title": "Youth meeting",
+        "content": "Ut quis lorem felis. Ut viverra, nibh vel dignissim convallis, elit nibh dapibus nibh, quis lacinia leo urna a lacus.",
+        "day": "Saturday",
+        "hour": "18,00",
+        "photo": "../../../src/www/img/service2.jpg"
+    },
+    {
+        "id": "2",
+        "title": "Prayer",
+        "content": "Phasellus at sodales ligula. Duis augue ipsum, pellentesque nec porta ut, dictum eget odio. Aenean nec quam bibendum felis condimentum commodo. Curabitur eget leo mattis diam aliquam laoreet ut vel tellus.",
+        "day": "Wednesday",
+        "hour": "19,00",
+        "photo": "../../../src/www/img/service3.jpg"
+    },
+    {
+        "id": "3",
+        "title": "Children service",
+        "content": "Phasellus at sodales ligula. Duis augue ipsum, pellentesque nec porta ut, dictum eget odio. Aenean nec quam bibendum felis condimentum commodo. Curabitur eget leo mattis diam aliquam laoreet ut vel tellus.",
+        "day": "Sunday",
+        "hour": "15,00",
+        "photo": "../../../src/www/img/service4.jpg"
+    },
+    {
+        "id": "4",
+        "title": "Marriage",
+        "content": "Mauris at porta elit. Suspendisse vulputate aliquam bibendum. Nulla aliquet convallis nisl. Vivamus varius mauris sed nunc laoreet sed porttitor enim euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "day": "Friday",
+        "hour": "19,00",
+        "photo": "../../../src/www/img/service5.jpg"
+    }
+
+]
+}

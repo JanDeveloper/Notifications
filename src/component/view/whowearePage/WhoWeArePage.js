@@ -11,7 +11,7 @@ import Footer from "../../layout/footer/Footer";
 
 
 
-class Home extends Component {
+class WhoWeAre extends Component {
 
     static propTypes = {
         fetchDataFromBackend: PropTypes.func,
@@ -107,6 +107,4 @@ class Home extends Component {
     }
 }
 
-
-
-export default Home;
+export default WhoWeAre;

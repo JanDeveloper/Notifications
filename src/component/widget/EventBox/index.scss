@@ -1,0 +1,68 @@
+.text-box--wrapper{
+    padding-left: 150px;
+    min-width: 100px;
+    height: max-content;
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.title {
+    font-size: 24px;
+    margin: 0;
+    margin-left: 10px;
+}
+.content {
+    margin-left: 10px;
+}
+.date {
+    width: 20%;
+    float: left;
+    height: 100%;
+    position: absolute;
+}
+.content-box {
+    width: 70%;
+    float: right;
+    background: white;
+    padding: 10px;
+    height: 100%;
+}
+.date-dd-odd {
+    font-size: 40px;
+    height: 50%;
+    background: #c1dbe8;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.date-dd-even {
+    font-size: 40px;
+    height: 50%;
+    background: #e7c0ec;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date-mm-odd {
+    font-size: 18px;
+    color: white;
+    background: #74a4b8;
+    height: 50%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.date-mm-even {
+    font-size: 18px;
+    color: white;
+    background: #ad74b8;
+    height: 50%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
