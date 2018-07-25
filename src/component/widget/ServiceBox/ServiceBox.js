@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { ListItem } from "@material-ui/core";
+//import { ListItem } from "@material-ui/core";
 
 
 
@@ -12,7 +12,11 @@ const ServiceBox = (props) => {
         <div className={"text-box--wrapper-s"}>
 
             <div className="date-s">
-                <img className="image" src={props.photo} alt="photo"/>
+                <img 
+                    className="image" 
+                    src={props.photo} 
+                    alt="photo"
+                />
             </div>
             <div className={"content-box-s-"+id}>
                 <h3 className="title-s">{props.title}</h3>

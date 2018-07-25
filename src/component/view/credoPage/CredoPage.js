@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import Header_w from "../../layout/header/Header_w";
+import Header_c from "../../layout/header/Header_c";
 //import Wrapper from "../../layout/wrapper/Wrapper";
 import Map from "../../widget/GoogleMap/Map";
 //import ImageBox from "../../widget/ImageBox/ImageBox";
 //import EventBox from "../../widget/EventBox/EventBox";
-import WhoWeAreBox from "../../widget/WhoWeAreBox/WhoWeAreBox";
+import CredoBox from "../../widget/CredoBox/CredoBox";
 import Grid from "@material-ui/core/Grid";
 import Footer from "../../layout/footer/Footer";
 
 
 
-class WhoWeAre extends Component {
+class Credo extends Component {
 
     static propTypes = {
         fetchDataFromBackend: PropTypes.func,
@@ -28,13 +28,13 @@ class WhoWeAre extends Component {
 
     render() {
         return (
-            <section className="church--wrapper-i">
-                <Header_w/>
-                
-                <main style={{ height: 800 }}>
+            <section className="church--wrapper">
+                <Header_c/>
+                <main className="credo" style={{ height: 700 }}>
                     <article>
-                        <h1 className="naslov1">{"MESTO GDE SVAKO"}</h1>
-                        <h1 className="naslov2">{"MOŽE NAĆI HRISTA"}</h1>
+                        <h1 className="naslov1">{"ŠTA"}</h1>
+                        <h1 className="naslov2">{"VERUJEMO"}</h1>
+
                     </article>
                     <Grid 
                         container 
@@ -45,14 +45,11 @@ class WhoWeAre extends Component {
                             xs={24} 
                             sm={12}
                         >
-                            <h2 className="wrapper-title">{"Ko smo mi?"}</h2>
                             {
-                                this.props.data && this.props.data.infos.map((info) => {
-                                    return <WhoWeAreBox 
-                                        title={info.title} 
-                                        content={info.content} 
-                                        id={info.id}
-                                        photo={info.photo}
+                                this.props.data && this.props.data.credos.map((credo) => {
+                                    return <CredoBox 
+                                        content={credo.content} 
+                                        id={credo.id}
                                     />
                                 })
                             }
@@ -66,4 +63,4 @@ class WhoWeAre extends Component {
     }
 }
 
-export default WhoWeAre;
+export default Credo;

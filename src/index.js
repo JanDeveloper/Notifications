@@ -8,6 +8,10 @@ import customHistory from "./common/history";
 import store from "./common/store";
 import LoadingSpinner from "./container/LoadingSpinner";
 import HomePage from "./container/HomePage";
+import WhoWeArePage from "./container/WhoWeArePage";
+import VisionPage from "./container/VisionPage";
+import CredoPage from "./container/CredoPage";
+
 
 const App = () => {
     return (

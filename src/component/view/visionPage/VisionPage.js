@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import Header_w from "../../layout/header/Header_w";
+import Header_v from "../../layout/header/Header_v";
 //import Wrapper from "../../layout/wrapper/Wrapper";
 import Map from "../../widget/GoogleMap/Map";
 //import ImageBox from "../../widget/ImageBox/ImageBox";
 //import EventBox from "../../widget/EventBox/EventBox";
-import WhoWeAreBox from "../../widget/WhoWeAreBox/WhoWeAreBox";
+import VisionBox from "../../widget/VisionBox/VisionBox";
 import Grid from "@material-ui/core/Grid";
 import Footer from "../../layout/footer/Footer";
 
 
 
-class WhoWeAre extends Component {
+class Vision extends Component {
 
     static propTypes = {
         fetchDataFromBackend: PropTypes.func,
@@ -28,13 +28,12 @@ class WhoWeAre extends Component {
 
     render() {
         return (
-            <section className="church--wrapper-i">
-                <Header_w/>
-                
-                <main style={{ height: 800 }}>
+            <section className="church--wrapper">
+                <Header_v/>
+                <main className="vision" style={{ height: 800 }}>
                     <article>
-                        <h1 className="naslov1">{"MESTO GDE SVAKO"}</h1>
-                        <h1 className="naslov2">{"MOŽE NAĆI HRISTA"}</h1>
+                        <h1 className="naslov1">{"NAŠA"}</h1>
+                        <h1 className="naslov2">{"VIZIJA"}</h1>
                     </article>
                     <Grid 
                         container 
@@ -45,14 +44,14 @@ class WhoWeAre extends Component {
                             xs={24} 
                             sm={12}
                         >
-                            <h2 className="wrapper-title">{"Ko smo mi?"}</h2>
+                            <h2 className="wrapper-title">{"Naša vizija"}</h2>
                             {
-                                this.props.data && this.props.data.infos.map((info) => {
-                                    return <WhoWeAreBox 
-                                        title={info.title} 
-                                        content={info.content} 
-                                        id={info.id}
-                                        photo={info.photo}
+                                this.props.data && this.props.data.visions.map((vision) => {
+                                    return <VisionBox 
+                                        title={vision.title} 
+                                        content={vision.content} 
+                                        id={vision.id}
+                                        photo={vision.photo}
                                     />
                                 })
                             }
@@ -66,4 +65,4 @@ class WhoWeAre extends Component {
     }
 }
 
-export default WhoWeAre;
+export default Vision;
