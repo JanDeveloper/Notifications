@@ -1,5 +1,4 @@
-.header{
-    background: url($imagesPath + "home.hero2_.jpg") center center no-repeat;
+.header {
     height: 500px;
     background-size: cover;
     background-attachment: fixed;
@@ -17,7 +16,7 @@
         .menu-navigation {
             text-align: center;
             
-            h3 {
+            a {
                 color: black;
             }
         }
@@ -25,6 +24,14 @@
 
     .menu-navigation {
         text-align: center;
+    }
+
+    &.home {
+        background: url($imagesPath + "home.hero2_.jpg") center center no-repeat;
+    }
+
+    &.whoWeAre {
+        background: url($imagesPath + "tree-growing-in-hands1.jpg") center center no-repeat;
     }
 }
 .wrapper{
@@ -70,38 +77,29 @@
         width: 110px;
         float: left;
     }
+    
+}
+.img {
+    float: right;
+
+}
+.fb {
+    width: 30px;
+    height: 30px;
+    margin-right: 50px;
+}
+.fb:hover {
+    width: 35px;
+    height: 35px;
+    margin-right: 47px;
+}
+.fb:active {
+    width: 30px;
+    height: 30px;
+    margin-right: 50px;
 }
 }
 
-.header_w{
-    background: url($imagesPath + "tree-growing-in-hands1.jpg") center center no-repeat;
-    height: 500px;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-
-    .header-church--sticky {
-        position: fixed;
-        width: 100%;
-        background: white;
-        transition: background .25s;
-        display: ruby;
-        z-index: 1000;
-
-
-        .menu-navigation {
-            text-align: center;
-            
-            h3 {
-                color: black;
-            }
-        }
-    }
-
-    .menu-navigation {
-        text-align: center;
-    }
-}
 .header_v {
     background: url($imagesPath + "vizija.jpg") center center no-repeat;
     height: 500px;
@@ -133,6 +131,36 @@
 }
 .header_c {
     background: url($imagesPath + "our_believe.jpg") center center no-repeat;
+    height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+
+    .header-church--sticky {
+        position: fixed;
+        width: 100%;
+        background: white;
+        transition: background .25s;
+        display: ruby;
+        z-index: 1000;
+
+
+        .menu-navigation {
+            text-align: center;
+            
+            h3 {
+                color: black;
+            }
+        }
+    }
+
+    .menu-navigation {
+        text-align: center;
+    }
+}
+
+.header_p {
+    background: url($imagesPath + "bible.jpg") center center no-repeat;
     height: 500px;
     background-size: cover;
     background-attachment: fixed;

@@ -4,6 +4,8 @@ import Typography from "@material-ui/core/Typography";
 import { withStyles } from "@material-ui/core/styles";
 import StickyHeader from "../../widget/StickyHeader/StickyHeader";
 import uuid from "uuid";
+import Button from "@material-ui/core/Button";
+import Link from "react-router-dom";
 
 const styles = theme => ({
     root: {
@@ -16,24 +18,36 @@ const styles = theme => ({
 
 const navItem = [ "Home", "Ko smo mi?", "Vizija", "Šta verujemo", "Reč Pastora", "Aktivnosti", "Humanitarni rad", "Kontakt" ];
 
+const newNavItem = [
+    {
+        "link": "/start",
+        "name": "Home"
+    }, 
+    {
+        "link": "/whoweare",
+        "name": "Ko smo mi?"
+    }
+];
+
 const Header = ( props ) => {
     return (
-        <header className="header">
+        <header 
+            className={`header ${props.page}`}
+        >
             <StickyHeader componentClassName="header-church">
                 <div className="header-wrapper">
                     <span className="logo"/>
                     <ul className="menu-navigation">
                         {
-                            navItem.map(item => {
+                            newNavItem.map(item => {
                                 return (
-                                    <Typography
+                                   <a 
                                         key={uuid.v4()}
                                         className={props.classes.root}
-                                        variant="subheading"
-                                        gutterBottom
+                                        href={item.link}
                                     >
-                                        {item}
-                                    </Typography>
+                                        {item.name} 
+                                   </a>
                                 );
                             })
                         }
@@ -46,6 +60,7 @@ const Header = ( props ) => {
 
 Header.propTypes = {
     classes: PropTypes.object.isRequired,
+    page: PropTypes.string
 };
 
 export default withStyles(styles)(Header);

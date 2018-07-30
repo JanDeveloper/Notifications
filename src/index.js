@@ -11,6 +11,8 @@ import HomePage from "./container/HomePage";
 import WhoWeArePage from "./container/WhoWeArePage";
 import VisionPage from "./container/VisionPage";
 import CredoPage from "./container/CredoPage";
+import PastorPage from "./container/PastorPage";
+
 
 
 const App = () => {
@@ -24,6 +26,15 @@ const App = () => {
                             exact
                             component={HomePage}
                             path={ROUTES.HOME}
+                        />
+
+                        <Route
+                            component={CredoPage}
+                            path="/start"
+                        />
+                        <Route
+                            component={WhoWeArePage}
+                            path="/whoweare"
                         />
                     </Switch>
                 </div>

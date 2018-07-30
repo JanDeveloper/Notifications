@@ -125,5 +125,12 @@
         "id": "3",
         "content": "Mauris at porta elit. Suspendisse vulputate aliquam bibendum. Nulla aliquet convallis nisl. Vivamus varius mauris sed nunc laoreet sed porttitor enim euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     }
+],
+"pastors": [{
+    "id": "0",
+    "content": "Mauris at porta elit. Suspendisse vulputate aliquam bibendum. Nulla aliquet convallis nisl. Ut quis lorem felis. Ut viverra, nibh vel dignissim convallis, elit nibh dapibus nibh, quis lacinia leo urna a lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis feugiat tempus lacus ut iaculis. Phasellus at sodales ligula. Duis augue ipsum, pellentesque nec porta ut, dictum eget odio. Aenean nec quam bibendum felis condimentum commodo. Curabitur eget leo mattis diam aliquam laoreet ut vel tellus. Vestibulum turpis enim, pharetra id consequat a, viverra id risus. Nam in magna felis. Nunc id arcu sit amet est sollicitudin vehicula eu at mi. Ut quis lorem felis. Ut viverra, nibh vel dignissim convallis, elit nibh dapibus nibh, quis lacinia leo urna a lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis feugiat tempus lacus ut iaculis. Phasellus at sodales ligula. Duis augue ipsum, pellentesque nec porta ut, dictum eget odio. Aenean nec quam bibendum felis condimentum commodo. Curabitur eget leo mattis diam aliquam laoreet ut vel tellus. Vestibulum turpis enim, pharetra id consequat a, viverra id risus. Nam in magna felis. Nunc id arcu sit amet est sollicitudin vehicula eu at mi.",  
+    "photo": "../../../src/www/img/pastor.jpg"
+}
+
 ]
 }

@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import Header from "../../layout/header/Header";
+import Header_p from "../../layout/header/Header_p";
 //import Wrapper from "../../layout/wrapper/Wrapper";
 import Map from "../../widget/GoogleMap/Map";
 //import ImageBox from "../../widget/ImageBox/ImageBox";
 //import EventBox from "../../widget/EventBox/EventBox";
-import WhoWeAreBox from "../../widget/WhoWeAreBox/WhoWeAreBox";
+import PastorBox from "../../widget/PastorBox/PastorBox";
 import Grid from "@material-ui/core/Grid";
 import Footer from "../../layout/footer/Footer";
 
 
 
-class WhoWeAre extends Component {
+class Pastor extends Component {
 
     static propTypes = {
         fetchDataFromBackend: PropTypes.func,
@@ -28,13 +28,13 @@ class WhoWeAre extends Component {
 
     render() {
         return (
-            <section className="church--wrapper-i">
-                <Header page="whoWeAre" />
-                
-                <main style={{ height: 800 }}>
+            <section className="church--wrapper">
+                <Header_p/>
+                <main className="pastor" style={{ height: 600 }}>
                     <article>
-                        <h1 className="naslov1">{"MESTO GDE SVAKO"}</h1>
-                        <h1 className="naslov2">{"MOŽE NAĆI HRISTA"}</h1>
+                        <h1 className="naslov1">{"REČ"}</h1>
+                        <h1 className="naslov2">{"PASTORA"}</h1>
+
                     </article>
                     <Grid 
                         container 
@@ -45,14 +45,12 @@ class WhoWeAre extends Component {
                             xs={24} 
                             sm={12}
                         >
-                            <h2 className="wrapper-title">{"Ko smo mi?"}</h2>
                             {
-                                this.props.data && this.props.data.infos.map((info) => {
-                                    return <WhoWeAreBox 
-                                        title={info.title} 
-                                        content={info.content} 
-                                        id={info.id}
-                                        photo={info.photo}
+                                this.props.data && this.props.data.pastors.map((pastor) => {
+                                    return <PastorBox 
+                                        photo={pastor.photo}
+                                        content={pastor.content} 
+                                        id={pastor.id}
                                     />
                                 })
                             }
@@ -66,4 +64,4 @@ class WhoWeAre extends Component {
     }
 }
 
-export default WhoWeAre;
+export default Pastor;

@@ -16,26 +16,15 @@ const styles = theme => ({
 
 const navItem = [ "Home", "Ko smo mi?", "Vizija", "Šta verujemo", "Reč Pastora", "Aktivnosti", "Humanitarni rad", "Kontakt" ];
 
-const newNavItem = [
-    {
-        "link": "google.com",
-        "name": "Home"
-    }, 
-    {
-        "link": "microsoft.com",
-        "name": "Home"
-    }
-];
-
-const Header_w = ( props ) => {
+const Header_p = ( props ) => {
     return (
-        <header className="header_w">
+        <header className="header_p">
             <StickyHeader componentClassName="header-church">
                 <div className="header-wrapper">
                     <span className="logo"/>
                     <ul className="menu-navigation">
                         {
-                            newNavItem.map(item => {
+                            navItem.map(item => {
                                 return (
                                     <Typography
                                         key={uuid.v4()}
@@ -43,7 +32,7 @@ const Header_w = ( props ) => {
                                         variant="subheading"
                                         gutterBottom
                                     >
-                                        {item.name}
+                                        {item}
                                     </Typography>
                                 );
                             })
@@ -55,8 +44,8 @@ const Header_w = ( props ) => {
     );
 };
 
-Header_w.propTypes = {
+Header_p.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Header_w);
+export default withStyles(styles)(Header_p);

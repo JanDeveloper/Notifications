@@ -39,6 +39,7 @@ const Footer = ( props ) => {
                         }
                     </ul>
                 </div>
+                <div className="img"><a href="#"><img src="../../../src/www/img/fb5.png" className="fb" alt="fb_logo"/></a></div>
             </div>
         </footer>
     );

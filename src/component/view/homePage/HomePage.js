@@ -29,15 +29,14 @@ class Home extends Component {
     render() {
         return (
             <section className="church--wrapper">
-                <Header/>
+                <Header page="home" />
                 <main style={{ height: 1000 }}>
                     <article>
                         <h1>{"Dobrodošli na sajt Evanđeoske Crkve Banovo brdo"}</h1>
                         <h3>{"Drago nam je da ste ovde"}</h3>
                     </article>
                     <Grid 
-                        container 
-                        spacing={24}
+                        container
                     >
                         <Grid 
                             item 
