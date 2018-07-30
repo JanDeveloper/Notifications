@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import Header_c from "../../layout/header/Header_c";
+import Header from "../../layout/header/Header";
 //import Wrapper from "../../layout/wrapper/Wrapper";
 import Map from "../../widget/GoogleMap/Map";
 //import ImageBox from "../../widget/ImageBox/ImageBox";
@@ -29,8 +29,8 @@ class Credo extends Component {
     render() {
         return (
             <section className="church--wrapper">
-                <Header_c/>
-                <main className="credo" style={{ height: 700 }}>
+                <Header page="credo" />
+                <main className="credos" style={{ height: 700 }}>
                     <article>
                         <h1 className="naslov1">{"ŠTA"}</h1>
                         <h1 className="naslov2">{"VERUJEMO"}</h1>

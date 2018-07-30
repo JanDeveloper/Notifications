@@ -26,7 +26,31 @@ const newNavItem = [
     {
         "link": "/whoweare",
         "name": "Ko smo mi?"
-    }
+    },
+    {
+        "link": "/vision",
+        "name": "Vizija"
+    },
+    {
+        "link": "/credo",
+        "name": "Šta verujemo"
+    },
+    {
+        "link": "/pastor",
+        "name": "Reč pastora"
+    }/*,
+    {
+        "link": "/activity",
+        "name": "Aktivnosti"
+    },
+    {
+        "link": "/humanity",
+        "name": "Humanitarni rad"
+    },
+    {
+        "link": "/contact",
+        "name": "Kontakt"
+    }*/
 ];
 
 const Header = ( props ) => {
@@ -37,7 +61,7 @@ const Header = ( props ) => {
             <StickyHeader componentClassName="header-church">
                 <div className="header-wrapper">
                     <span className="logo"/>
-                    <ul className="menu-navigation">
+                    <ul className={`menu-navigation ${props.page}`}>
                         {
                             newNavItem.map(item => {
                                 return (

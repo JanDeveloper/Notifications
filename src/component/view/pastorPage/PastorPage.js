@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import Header_p from "../../layout/header/Header_p";
+import Header from "../../layout/header/Header";
 //import Wrapper from "../../layout/wrapper/Wrapper";
 import Map from "../../widget/GoogleMap/Map";
 //import ImageBox from "../../widget/ImageBox/ImageBox";
@@ -29,8 +29,8 @@ class Pastor extends Component {
     render() {
         return (
             <section className="church--wrapper">
-                <Header_p/>
-                <main className="pastor" style={{ height: 600 }}>
+                <Header page="pastor"/>
+                <main className="pastors" style={{ height: 600 }}>
                     <article>
                         <h1 className="naslov1">{"REČ"}</h1>
                         <h1 className="naslov2">{"PASTORA"}</h1>

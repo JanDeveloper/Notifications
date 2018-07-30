@@ -1,9 +1,5 @@
 .header {
-    height: 500px;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-
+    
     .header-church--sticky {
         position: fixed;
         width: 100%;
@@ -28,10 +24,42 @@
 
     &.home {
         background: url($imagesPath + "home.hero2_.jpg") center center no-repeat;
+        height: 500px;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
     }
 
     &.whoWeAre {
         background: url($imagesPath + "tree-growing-in-hands1.jpg") center center no-repeat;
+        height: 500px;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+    }
+    &.whoWeAre a {
+        color: green;
+    }
+    &.vision {
+        background: url($imagesPath + "vizija.jpg") center center no-repeat;
+        height: 500px;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+    }
+    &.credo {
+        background: url($imagesPath + "our_believe.jpg") center center no-repeat;
+        height: 500px;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+    }
+    &.pastor {
+        background: url($imagesPath + "bible.jpg") center center no-repeat;
+        height: 500px;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
     }
 }
 .wrapper{
@@ -100,91 +128,3 @@
 }
 }
 
-.header_v {
-    background: url($imagesPath + "vizija.jpg") center center no-repeat;
-    height: 500px;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-
-    .header-church--sticky {
-        position: fixed;
-        width: 100%;
-        background: white;
-        transition: background .25s;
-        display: ruby;
-        z-index: 1000;
-
-
-        .menu-navigation {
-            text-align: center;
-            
-            h3 {
-                color: black;
-            }
-        }
-    }
-
-    .menu-navigation {
-        text-align: center;
-    }
-}
-.header_c {
-    background: url($imagesPath + "our_believe.jpg") center center no-repeat;
-    height: 500px;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-
-    .header-church--sticky {
-        position: fixed;
-        width: 100%;
-        background: white;
-        transition: background .25s;
-        display: ruby;
-        z-index: 1000;
-
-
-        .menu-navigation {
-            text-align: center;
-            
-            h3 {
-                color: black;
-            }
-        }
-    }
-
-    .menu-navigation {
-        text-align: center;
-    }
-}
-
-.header_p {
-    background: url($imagesPath + "bible.jpg") center center no-repeat;
-    height: 500px;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-
-    .header-church--sticky {
-        position: fixed;
-        width: 100%;
-        background: white;
-        transition: background .25s;
-        display: ruby;
-        z-index: 1000;
-
-
-        .menu-navigation {
-            text-align: center;
-            
-            h3 {
-                color: black;
-            }
-        }
-    }
-
-    .menu-navigation {
-        text-align: center;
-    }
-}

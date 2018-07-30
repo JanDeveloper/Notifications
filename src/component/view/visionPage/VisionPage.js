@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import Header_v from "../../layout/header/Header_v";
+import Header from "../../layout/header/Header";
 //import Wrapper from "../../layout/wrapper/Wrapper";
 import Map from "../../widget/GoogleMap/Map";
 //import ImageBox from "../../widget/ImageBox/ImageBox";
@@ -29,7 +29,7 @@ class Vision extends Component {
     render() {
         return (
             <section className="church--wrapper">
-                <Header_v/>
+                <Header page="vision" />
                 <main className="vision" style={{ height: 800 }}>
                     <article>
                         <h1 className="naslov1">{"NAŠA"}</h1>

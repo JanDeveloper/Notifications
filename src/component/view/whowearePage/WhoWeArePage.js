@@ -28,7 +28,7 @@ class WhoWeAre extends Component {
 
     render() {
         return (
-            <section className="church--wrapper-i">
+            <section className="church--wrapper">
                 <Header page="whoWeAre" />
                 
                 <main style={{ height: 800 }}>

@@ -29,13 +29,26 @@ const App = () => {
                         />
 
                         <Route
-                            component={CredoPage}
+                            component={HomePage}
                             path="/start"
                         />
                         <Route
                             component={WhoWeArePage}
                             path="/whoweare"
                         />
+                        <Route
+                            component={VisionPage}
+                            path="/vision"
+                        />
+                        <Route
+                            component={CredoPage}
+                            path="/credo"
+                        />
+                        <Route
+                            component={PastorPage}
+                            path="/pastor"
+                        />
+                        
                     </Switch>
                 </div>
             </Router>
