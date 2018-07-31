@@ -38,11 +38,11 @@ const newNavItem = [
     {
         "link": "/pastor",
         "name": "Reč pastora"
-    }/*,
+    },
     {
         "link": "/activity",
         "name": "Aktivnosti"
-    },
+    }/*,
     {
         "link": "/humanity",
         "name": "Humanitarni rad"

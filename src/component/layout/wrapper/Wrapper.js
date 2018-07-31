@@ -17,7 +17,8 @@ const styles = theme => ({
 
 const Wrapper = ( props ) => {
     return (
-        <header className="wrapper">
+        <header 
+        className={`wrapper ${props.page}`}>
             <StickyHeader componentClassName="header-church">
                 <div className="header-wrapper">
                     <span className="logo"/>

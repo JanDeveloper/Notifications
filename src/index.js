@@ -12,7 +12,7 @@ import WhoWeArePage from "./container/WhoWeArePage";
 import VisionPage from "./container/VisionPage";
 import CredoPage from "./container/CredoPage";
 import PastorPage from "./container/PastorPage";
-
+import ActivityPage from "./container/ActivityPage";
 
 
 const App = () => {
@@ -47,6 +47,10 @@ const App = () => {
                         <Route
                             component={PastorPage}
                             path="/pastor"
+                        />
+                        <Route
+                            component={ActivityPage}
+                            path="/activity"
                         />
                         
                     </Switch>

@@ -61,6 +61,13 @@
         background-attachment: fixed;
         width: 100%;
     }
+    &.activity {
+        background: none;
+        height: 0;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+    }
 }
 .wrapper{
     background: url($imagesPath + "worship.jpg") center center no-repeat;
@@ -86,6 +93,13 @@
 
     .menu-navigation {
         text-align: center;
+    }
+    &.activity {
+        background: url($imagesPath + "worship.jpg") center center no-repeat;
+        height: 200px;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
     }
 }
 .footer {
