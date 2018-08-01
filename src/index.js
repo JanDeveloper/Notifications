@@ -13,7 +13,8 @@ import VisionPage from "./container/VisionPage";
 import CredoPage from "./container/CredoPage";
 import PastorPage from "./container/PastorPage";
 import ActivityPage from "./container/ActivityPage";
-
+import HumanityPage from "./container/HumanityPage";
+import ContactPage from "./container/ContactPage";
 
 const App = () => {
     return (
@@ -52,7 +53,14 @@ const App = () => {
                             component={ActivityPage}
                             path="/activity"
                         />
-                        
+                        <Route
+                            component={HumanityPage}
+                            path="/humanity"
+                        />
+                        <Route
+                            component={ContactPage}
+                            path="/contact"
+                        />
                     </Switch>
                 </div>
             </Router>

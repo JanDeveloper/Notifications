@@ -42,7 +42,7 @@ const newNavItem = [
     {
         "link": "/activity",
         "name": "Aktivnosti"
-    }/*,
+    },
     {
         "link": "/humanity",
         "name": "Humanitarni rad"
@@ -50,7 +50,7 @@ const newNavItem = [
     {
         "link": "/contact",
         "name": "Kontakt"
-    }*/
+    }
 ];
 
 const Header = ( props ) => {

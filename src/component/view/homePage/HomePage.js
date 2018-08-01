@@ -37,6 +37,7 @@ class Home extends Component {
                     </article>
                     <Grid 
                         container
+                        spacing={24}
                     >
                         <Grid 
                             item 

@@ -14,8 +14,45 @@ const styles = theme => ({
     },
 });
 
+
+    const url = 'https://www.facebook.com/Evan%C4%91eoska-crkva-Banovo-brdo-Beograd-223951751425314/';
+
 const navItem = [ "Home", "Ko smo mi?", "Vizija", "Šta verujemo", "Reč Pastora", "Aktivnosti", "Humanitarni rad", "Kontakt" ];
 
+const newNavItem = [
+    {
+        "link": "/start",
+        "name": "Home"
+    }, 
+    {
+        "link": "/whoweare",
+        "name": "Ko smo mi?"
+    },
+    {
+        "link": "/vision",
+        "name": "Vizija"
+    },
+    {
+        "link": "/credo",
+        "name": "Šta verujemo"
+    },
+    {
+        "link": "/pastor",
+        "name": "Reč pastora"
+    },
+    {
+        "link": "/activity",
+        "name": "Aktivnosti"
+    },
+    {
+        "link": "/humanity",
+        "name": "Humanitarni rad"
+    },
+    {
+        "link": "/contact",
+        "name": "Kontakt"
+    }
+];
 const Footer = ( props ) => {
     return (
         <footer className="footer">
@@ -24,22 +61,21 @@ const Footer = ( props ) => {
                 <div className="container">
                     <ul className="footer-navigation">
                         {
-                            navItem.map(item => {
+                            newNavItem.map(item => {
                                 return (
-                                    <Typography
+                                   <a 
                                         key={uuid.v4()}
                                         className={props.classes.root}
-                                        variant="subheading"
-                                        gutterBottom
+                                        href={item.link}
                                     >
-                                        {item}
-                                    </Typography>
+                                        {item.name} 
+                                   </a>
                                 );
                             })
                         }
                     </ul>
                 </div>
-                <div className="img"><a href="#"><img src="../../../src/www/img/fb5.png" className="fb" alt="fb_logo"/></a></div>
+                <div className="img"><a style={{display: "table-cell"}} href={url} target="_blank"><img src="../../../src/www/img/fb5.png" className="fb" alt="fb_logo"/></a></div>
             </div>
         </footer>
     );
