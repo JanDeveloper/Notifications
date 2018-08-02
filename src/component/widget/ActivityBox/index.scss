@@ -1,15 +1,18 @@
 .text-box--wrapper-a{
     padding-left: 50px;
-    height: 550px;
+    min-height: 200px;
     margin-top: 10px;
-    overflow: hidden;
+    width: 100%;
     position: relative;
-    width: 80%;
 
+}
+.content-title-a {
+    float: left;
+    min-height: 200px;
+    width: 30%;
 }
 .title-a {
     font-size: 24px;
-    margin: 0;
     margin-left: 10px;
     margin-right: 25px;
 
@@ -17,6 +20,8 @@
 .content-a {
     margin-left: 10px;
     margin-right: 25px;
+    text-align: left;
+    margin-top: 30px;
 }
 .time-a {
     margin-left: 10px;
@@ -26,27 +31,29 @@
 .date-a {
     overflow: hidden;
     position: relative;
+    float: left;
+    width: 25%;
     
 }
 .content-box-a-odd {
-    width: 100%;
+    width: 70%;
     background: white;
-    padding: 10px;
     height: max-content;
     position: relative;
     background: #74a4b8;
     color: white;
     text-align: center;
+    float: left;
 }
 .content-box-a-even {
-    width: 100%;
+    width: 70%;
     background: white;
-    padding: 10px;
     height: max-content;
     position: relative;
     background: #ad74b8;
     color: white;
     text-align: center;
+    float: left;
 }
 .date-h-p {
     font-size: 24px;
@@ -59,8 +66,8 @@
     margin: 8px;
     text-align: center;
 }
-.image {
+.date-a .image {
     width: 100%;
-    height: 250px;
+    height: 200px;
 }
 

@@ -43,14 +43,8 @@ class Contact extends Component {
                             sm={12}
                         >
                             <h2 className="wrapper-title">{"Kontakt"}</h2>
-                            {
-                                this.props.data && this.props.data.credos.map((credo) => {
-                                    return <ContactBox 
-                                        content={credo.content} 
-                                        id={credo.id}
-                                    />
-                                })
-                            }
+                            <ContactBox />
+                             
                         </Grid>
                     </Grid>
                 </main>

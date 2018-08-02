@@ -19,12 +19,16 @@ const ActivityBox = (props) => {
                 />
             </div>
             <div className={"content-box-a-"+id}>
+            <div className="content-title-a">
                 <h3 className="title-a">{props.title}</h3>
-                <p className="date-a">{props.month}{", "}{props.date}</p>
+                <p className="date-p-a">{props.month}{", "}{props.date}</p>
                 <p className="time-a">{props.day}{", at"} {props.hour}</p>
+            </div>
+            <div className="content-content-a">
                 <p className="content-a">
                     {props.content}
                 </p>
+            </div>
             </div>
         </div>
 

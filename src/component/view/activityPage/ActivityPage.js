@@ -45,7 +45,7 @@ class Activity extends Component {
                             <h2 className="wrapper-title">{"Aktivnosti"}</h2>
                             {
                                 this.props.data && this.props.data.activities.map((activity) => {
-                                    return <ServiceBox 
+                                    return <ActivityBox 
                                         hour={activity.hour}
                                         day={activity.day}
                                         title={activity.title} 

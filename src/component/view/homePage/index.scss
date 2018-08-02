@@ -57,6 +57,9 @@ main {
 }
 body {
     background: #f5f5f5;
+    overflow: -moz-scrollbars-vertical;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .vision {
