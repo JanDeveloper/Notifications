@@ -32,7 +32,7 @@ class Contact extends Component {
         return (
             <section className="church--wrapper">
                 <Header page="contact" />
-                <main className="contacts" style={{ height: 800 }}>
+                <main className="contacts" style={{ height: 500 }}>
                     <Grid 
                         container 
                         spacing={24}
@@ -43,8 +43,16 @@ class Contact extends Component {
                             sm={12}
                         >
                             <h2 className="wrapper-title">{"Kontakt"}</h2>
-                            <ContactBox />
-                             
+                            <div className="contact-data">
+                            <p>Adresa: </p>
+                            <p>Požeška 83a, Beograd-Banovo Brdo </p><br/>
+                            <p>Telefon: </p>
+                            <p>011 555-4444 </p><br/>
+                            <p>GPS: lat: 44,774049, lng: 20,41433</p><br/>
+                            <p>E-mail: office@ecs-bb.com</p>
+                            </div>
+                        <ContactBox />
+                                            
                         </Grid>
                     </Grid>
                 </main>

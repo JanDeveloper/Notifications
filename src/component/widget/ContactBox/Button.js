@@ -5,10 +5,10 @@ class Button extends Component {
 
     static PropTypes = {
         email: PropTypes.string,
-        formVelues: PropTypes.shape({
-            name: PropTypes.string,
-            email: PropTypes.string,
-            message: PropTypes.string,
+        formValues: PropTypes.shape({
+            name: PropTypes.string.isRequired,
+            email: PropTypes.string.isRequired,
+            message: PropTypes.string.isRequired,
         }).isRequired,
     }
     constructor(props) {
@@ -20,11 +20,11 @@ class Button extends Component {
     }
 
     logFormDataToConsole(event) {
-        console.log('Form Values', this.props.formVelues);
+        console.log('Form Values', this.props.formValues);
     }
     render() {
         return (
-            <button
+            <button className="contact-button"
             disabled={this.state.isClicked}
             onClick={this.logFormDataToConsole}
             >

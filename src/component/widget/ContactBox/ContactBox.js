@@ -20,19 +20,19 @@ class ContactBox extends Component {
     }
     render(){
         return(
-            <div>
+            <div className="form">
                 <Field 
-                label="Ime"
+                label="Ime: "
                 onChange={(event) => this.updateField('name', event.target.value)} 
                 value={this.state.name} 
                 />
                 <Field 
-                label="Email"
+                label="Email: "
                 onChange={(event) => this.updateField('email', event.target.value)} 
                 value={this.state.email} 
                 />
-                <Field  
-                label="Poruka"
+                <Field
+                label="Poruka: "
                 onChange={(event) => this.updateField('message', event.target.value)} 
                 textarea={true}
                 value={this.state.message} 
