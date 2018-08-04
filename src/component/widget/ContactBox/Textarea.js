@@ -1,28 +1,29 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Field = (props) => {
+const Textarea = (props) => {
 return(
-<div className={"form-k"}>
+<div className={"form-text"}>
 <label>{props.label}</label>
-<input
+<textarea
     onChange={props.onChange}
     type={props.textarea ? 'textarea' : 'text'}
     value={props.value}
-/>
+>
+</textarea>
 </div>
 );
 };
 
-Field.PropTypes = {
+Textarea.PropTypes = {
     label: PropTypes.string.isRequired,
     onChange: PropTypes.func.isRequired,
     value: PropTypes.string.isRequired,
     textarea: PropTypes.bool.isRequired
 };
 
-Field.defaultProps = {
+Textarea.defaultProps = {
     textarea: false,
 };
 
-export default Field;
+export default Textarea;

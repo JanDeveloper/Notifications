@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import Field from "./Field"
 import Button from "./Button"
+import Textarea from "./Textarea"
+
 //import { ListItem } from "@material-ui/core";
 
 class ContactBox extends Component {
@@ -31,7 +33,7 @@ class ContactBox extends Component {
                 onChange={(event) => this.updateField('email', event.target.value)} 
                 value={this.state.email} 
                 />
-                <Field
+                <Textarea
                 label="Poruka: "
                 onChange={(event) => this.updateField('message', event.target.value)} 
                 textarea={true}
