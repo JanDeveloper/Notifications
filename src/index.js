@@ -15,6 +15,7 @@ import PastorPage from "./container/PastorPage";
 import ActivityPage from "./container/ActivityPage";
 import HumanityPage from "./container/HumanityPage";
 import ContactPage from "./container/ContactPage";
+import EventPage from "./container/EventPage";
 
 const App = () => {
     return (
@@ -60,6 +61,10 @@ const App = () => {
                         <Route
                             component={ContactPage}
                             path="/contact"
+                        />
+                        <Route
+                            component={EventPage}
+                            path="/events"
                         />
                     </Switch>
                 </div>

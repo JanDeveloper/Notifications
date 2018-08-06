@@ -9,6 +9,7 @@ import ServiceBox from "../../widget/ServiceBox/ServiceBox";
 import Grid from "@material-ui/core/Grid";
 import Footer from "../../layout/footer/Footer";
 import { Route, Router, Switch } from "react-router-dom";
+import EventNavBox from "../../widget/EventBox/EventNavBox";
 
 const link = "../container/ActivityPage";
 
@@ -60,9 +61,7 @@ class Home extends Component {
                                 })
                             }
                             
-                            <button className="btn-events">
-                            {"Ostali dogadjaji"}
-                            </button>
+                            <EventNavBox />
                         </Grid>
                         <Grid 
                             item 
