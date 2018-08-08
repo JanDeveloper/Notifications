@@ -4,7 +4,7 @@ import Header from "../../layout/header/Header";
 import Wrapper from "../../layout/wrapper/Wrapper";
 import Map from "../../widget/GoogleMap/Map";
 import ImageBox from "../../widget/ImageBox/ImageBox";
-import EventBox from "../../widget/EventBox/EventBox";
+import AllEventBox from "../../widget/EventBox/AllEventBox";
 import ServiceBox from "../../widget/ServiceBox/ServiceBox";
 import ActivityBox from "../../widget/ActivityBox/ActivityBox";
 import Grid from "@material-ui/core/Grid";
@@ -32,7 +32,7 @@ class Events extends Component {
             <section className="church--wrapper">
                 <Header page="activity" />
                 <Wrapper page="activity" />
-                <main className="activities" style={{ height: 1200 }}>
+                <main className="allevents" style={{ height: 1200 }}>
                     <Grid 
                         container 
                         spacing={24}
@@ -45,7 +45,7 @@ class Events extends Component {
                             <h2 className="wrapper-title">{"Dogadjaji"}</h2>
                             {
                                 this.props.data && this.props.data.events.map((event) => {
-                                    return <EventBox 
+                                    return <AllEventBox 
                                     date={event.date}
                                     month={event.month}
                                     title={event.title} 
