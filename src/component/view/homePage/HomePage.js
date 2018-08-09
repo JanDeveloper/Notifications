@@ -11,7 +11,7 @@ import Footer from "../../layout/footer/Footer";
 import { Route, Router, Switch } from "react-router-dom";
 import EventNavBox from "../../widget/EventBox/EventNavBox";
 
-const link = "../container/ActivityPage";
+//const link = "../container/ActivityPage";
 
 class Home extends Component {
 
@@ -47,6 +47,7 @@ class Home extends Component {
                             sm={6}
                         >
                             <h2 className="main-title">{"Dogadjaji"}</h2>
+                           
                             {
                                 this.props.data && this.props.data.events.map((event) => {
 
@@ -55,9 +56,8 @@ class Home extends Component {
                                         month={event.month}
                                         title={event.title} 
                                         content={event.content} 
-                                        id={event.id}
+                                        id={event.id}                                        
                                     />
-                                            
                                 })
                             }
                             

@@ -24,7 +24,7 @@ const AllEventBox = (props) => {
 };
  
 AllEventBox.propTypes = {
-    id: PropTypes.number,
+    id: PropTypes.num,
     title: PropTypes.string,
     content: PropTypes.string,
     date: PropTypes.string,

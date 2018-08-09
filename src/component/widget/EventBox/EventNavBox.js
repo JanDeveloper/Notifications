@@ -11,6 +11,7 @@ const navEvent = ["Ostali Događaji"];
 
 const newNavEvent =[
     {
+        
         "link": "/events",
         "name": "Ostali Događaji"
     }];
