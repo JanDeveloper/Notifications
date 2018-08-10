@@ -7,6 +7,15 @@ import PropTypes from "prop-types";
 const ServiceBox = (props) => {
     let id = (props.id % 2 === 0 ? "odd" : "even" );
 
+    const navEvent = ["Pročitaj više"];
+
+const newNavEvent =[
+    {
+        
+        "link": "/activity",
+        "name": "Pročitaj više"
+    }];
+
     return (
        
         <div className={"text-box--wrapper-s"}>
@@ -23,6 +32,17 @@ const ServiceBox = (props) => {
                 <p className="time-s">{props.day}{", at"} {props.hour}</p>
                 <p className="content-s">
                     {props.content}
+                    {
+                            newNavEvent.map(event => {
+                                return (
+                                   <a className="content-s"
+                                        href={event.link}
+                                    >
+                                        {event.name} 
+                                   </a>
+                                );
+                            })
+                        }
                 </p>
             </div>
         </div>

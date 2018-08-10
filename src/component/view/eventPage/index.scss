@@ -1,20 +1,26 @@
 .text-box--events {  
     position: relative;
+    padding-left: 20px;
 
     .content-box-odd {
-        width: 100%;
-        padding-left: 20px;
+        width: 96%;
+        padding-left: 22px;
         padding-bottom: 10px;
         background: #e9d189;
     }
     .content-box-even {
-        width: 100%;
-        padding-left: 20px;
+        width: 96%;
+        padding-left: 22px;
         padding-bottom: 10px;
         background: #e6d9b1;
     }
     .dates {
         padding-top: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        padding-left: 20px;
+        padding-right: 20px;
     }
+    
 }   
  

@@ -32,7 +32,7 @@ class Activity extends Component {
             <section className="church--wrapper">
                 <Header page="activity" />
                 <Wrapper page="activity" />
-                <main className="activities" style={{ height: 1200 }}>
+                <main className="activities" style={{ marginBottom: 20 }}>
                     <Grid 
                         container 
                         spacing={24}

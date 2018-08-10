@@ -30,7 +30,7 @@ class Pastor extends Component {
         return (
             <section className="church--wrapper">
                 <Header page="pastor"/>
-                <main className="pastors" style={{ height: 600 }}>
+                <main className="pastors" style={{ marginBottom: 10 }}>
                     <article>
                         <h1 className="naslov1">{"REČ"}</h1>
                         <h1 className="naslov2">{"PASTORA"}</h1>

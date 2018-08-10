@@ -32,7 +32,7 @@ class Events extends Component {
             <section className="church--wrapper">
                 <Header page="activity" />
                 <Wrapper page="activity" />
-                <main className="allevents" style={{ height: 1200 }}>
+                <main className="allevents">
                     <Grid 
                         container 
                         spacing={24}

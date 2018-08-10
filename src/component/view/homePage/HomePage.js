@@ -11,8 +11,6 @@ import Footer from "../../layout/footer/Footer";
 import { Route, Router, Switch } from "react-router-dom";
 import EventNavBox from "../../widget/EventBox/EventNavBox";
 
-//const link = "../container/ActivityPage";
-
 class Home extends Component {
 
     static propTypes = {
@@ -32,7 +30,7 @@ class Home extends Component {
         return (
             <section className="church--wrapper">
                 <Header page="home" />
-                <main style={{ height: 1000 }}>
+                <main style={{ marginBottom: 30 }}>
                     <article>
                         <h1>{"Dobrodošli na sajt Evanđeoske Crkve Banovo brdo"}</h1>
                         <h3>{"Drago nam je da ste ovde"}</h3>
@@ -49,16 +47,16 @@ class Home extends Component {
                             <h2 className="main-title">{"Dogadjaji"}</h2>
                            
                             {
-                                this.props.data && this.props.data.events.map((event) => {
+                               this.props.data && this.props.data.events.slice(-4).map((event) => {
 
-                                    return <EventBox 
-                                        date={event.date}
-                                        month={event.month}
-                                        title={event.title} 
-                                        content={event.content} 
-                                        id={event.id}                                        
-                                    />
-                                })
+                                return <EventBox 
+                                    date={event.date}
+                                    month={event.month}
+                                    title={event.title} 
+                                    content={event.content.substr(0, 120)} 
+                                    id={event.id}                                        
+                                />
+                            })
                             }
                             
                             <EventNavBox />
@@ -94,7 +92,7 @@ class Home extends Component {
                                         hour={service.hour}
                                         day={service.day}
                                         title={service.title} 
-                                        content={service.content} 
+                                        content={service.content.substr(0, 120)} 
                                         id={service.id}
                                         photo={service.photo}
                                     />

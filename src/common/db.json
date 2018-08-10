@@ -11,7 +11,7 @@
             "id": "1",
             "title": "Welcome",
             "date": "15",
-            "month": "januar",
+            "month": "august",
             "content": "Ut quis lorem felis. Ut viverra, nibh vel dignissim convallis, elit nibh dapibus nibh, quis lacinia leo urna a lacus."
         },
         
@@ -24,6 +24,20 @@
         },
         {
             "id": "3",
+            "title": "Nullam in semper dui",
+            "date": "12",
+            "month": "october",
+            "content": "Phasellus at sodales ligula. Duis augue ipsum, pellentesque nec porta ut, dictum eget odio. Aenean nec quam bibendum felis condimentum commodo. Curabitur eget leo mattis diam aliquam laoreet ut vel tellus."
+        },
+        {
+            "id": "4",
+            "title": "Nullam in semper dui",
+            "date": "8",
+            "month": "november",
+            "content": "Phasellus at sodales ligula. Duis augue ipsum, pellentesque nec porta ut, dictum eget odio. Aenean nec quam bibendum felis condimentum commodo. Curabitur eget leo mattis diam aliquam laoreet ut vel tellus."
+        },
+        {
+            "id": "5",
             "title": "Lorem ipsum",
             "date": "25",
             "month": "december",

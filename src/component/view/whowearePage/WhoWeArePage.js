@@ -31,7 +31,7 @@ class WhoWeAre extends Component {
             <section className="church--wrapper">
                 <Header page="whoWeAre" />
                 
-                <main style={{ height: 800 }}>
+                <main style={{ marginBottom: 10 }}>
                     <article>
                         <h1 className="naslov1">{"MESTO GDE SVAKO"}</h1>
                         <h1 className="naslov2">{"MOŽE NAĆI HRISTA"}</h1>

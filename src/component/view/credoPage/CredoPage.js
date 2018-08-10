@@ -30,7 +30,7 @@ class Credo extends Component {
         return (
             <section className="church--wrapper">
                 <Header page="credo" />
-                <main className="credos" style={{ height: 700 }}>
+                <main className="credos" style={{ marginBottom: 20 }}>
                     <article>
                         <h1 className="naslov1">{"ŠTA"}</h1>
                         <h1 className="naslov2">{"VERUJEMO"}</h1>

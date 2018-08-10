@@ -30,7 +30,7 @@ class Vision extends Component {
         return (
             <section className="church--wrapper">
                 <Header page="vision" />
-                <main className="vision" style={{ height: 800 }}>
+                <main className="vision" style={{ marginBottom: 10 }}>
                     <article>
                         <h1 className="naslov1">{"NAŠA"}</h1>
                         <h1 className="naslov2">{"VIZIJA"}</h1>

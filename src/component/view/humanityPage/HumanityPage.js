@@ -30,7 +30,7 @@ class Humanity extends Component {
         return (
             <section className="church--wrapper">
                 <Header page="humanity" />
-                <main className="humanities" style={{ height: 700 }}>
+                <main className="humanities" style={{ marginBottom: 20 }}>
                     <article>
                         <h1 className="naslov1">{"LJUBAV"}</h1>
                         <h1 className="naslov2">{"NA DELU"}</h1>

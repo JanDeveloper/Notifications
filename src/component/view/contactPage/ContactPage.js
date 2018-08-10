@@ -32,7 +32,7 @@ class Contact extends Component {
         return (
             <section className="church--wrapper">
                 <Header page="contact" />
-                <main className="contacts" style={{ height: 500 }}>
+                <main className="contacts" style={{ marginBottom: 30 }}>
                     <Grid 
                         container 
                         spacing={24}
