@@ -28,7 +28,7 @@ const EventBox = (props) => {
             <div className="content-box">
                 <h3 className="title">{props.title}</h3>
                 <p className="content">
-                    {props.content}
+                    {props.content}...
                         {
                             newNavEvent.map(event => {
                                 return (

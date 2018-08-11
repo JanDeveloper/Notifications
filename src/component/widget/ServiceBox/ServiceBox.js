@@ -31,7 +31,7 @@ const newNavEvent =[
                 <h3 className="title-s">{props.title}</h3>
                 <p className="time-s">{props.day}{", at"} {props.hour}</p>
                 <p className="content-s">
-                    {props.content}
+                    {props.content}...
                     {
                             newNavEvent.map(event => {
                                 return (
