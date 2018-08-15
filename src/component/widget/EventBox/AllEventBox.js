@@ -11,7 +11,7 @@ const AllEventBox = (props) => {
     return (
 
         <div className="text-box--events">
-            <div className={"content-box-"+(id)}>
+            <div className={"content-box-"+(id)} id={"event"+props.id}>
             <p className={"dates"}>
                         {props.date}, {props.month}</p>
                 <h3 className="title">{props.title}</h3>

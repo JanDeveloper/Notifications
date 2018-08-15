@@ -1,15 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-//import { ListItem } from "@material-ui/core";
+import { HashLink as Link } from 'react-router-hash-link';
 
-const navEvent = ["Pročitaj više"];
-
-const newNavEvent =[
-    {
-        
-        "link": "/events",
-        "name": "Pročitaj više"
-    }];
 
 const EventBox = (props) => {
 
@@ -25,21 +17,11 @@ const EventBox = (props) => {
                 </div>
                 <div className={"date-mm-"+(id)}><p className={"date-mm-"+(id)}>{props.month}</p></div>
             </div>
-            <div className="content-box">
+            <div className="content-box" id={"event"+props.id}>
                 <h3 className="title">{props.title}</h3>
                 <p className="content">
                     {props.content}...
-                        {
-                            newNavEvent.map(event => {
-                                return (
-                                   <a className="content"
-                                        href={event.link}
-                                    >
-                                        {event.name} 
-                                   </a>
-                                );
-                            })
-                        }
+                        <Link to={`/events#event${props.id}`}>Pročitaj više</Link>
                 </p>
             </div>
         </div>

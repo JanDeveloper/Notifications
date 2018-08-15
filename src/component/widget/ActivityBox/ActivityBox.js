@@ -9,7 +9,7 @@ const ActivityBox = (props) => {
 
     return (
        
-        <div className={"text-box--wrapper-a"}>
+        <div className={"text-box--wrapper-a"} id={"service"+props.id}>
 
             <div className="date-a">
                 <img 

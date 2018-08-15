@@ -18,7 +18,9 @@ import ContactPage from "./container/ContactPage";
 import EventPage from "./container/EventPage";
 
 const App = () => {
+    
     return (
+        
         <Provider store={store}>
             <Router history={customHistory}>
                 <div>
