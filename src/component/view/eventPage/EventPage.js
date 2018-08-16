@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import Header from "../../layout/header/Header";
 import Wrapper from "../../layout/wrapper/Wrapper";
-import Map from "../../widget/GoogleMap/Map";
-import ImageBox from "../../widget/ImageBox/ImageBox";
+//import Map from "../../widget/GoogleMap/Map";
+//import ImageBox from "../../widget/ImageBox/ImageBox";
 import AllEventBox from "../../widget/EventBox/AllEventBox";
-import ServiceBox from "../../widget/ServiceBox/ServiceBox";
-import ActivityBox from "../../widget/ActivityBox/ActivityBox";
+//import ServiceBox from "../../widget/ServiceBox/ServiceBox";
+//import ActivityBox from "../../widget/ActivityBox/ActivityBox";
 import Grid from "@material-ui/core/Grid";
 import Footer from "../../layout/footer/Footer";
 
@@ -31,7 +31,7 @@ class Events extends Component {
         return (
             <section className="church--wrapper">
                 <Header page="activity" />
-                <Wrapper page="activity" />
+                <Wrapper page="event" />
                 <main className="allevents">
                     <Grid 
                         container 

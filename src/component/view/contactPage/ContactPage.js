@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import Header from "../../layout/header/Header";
-import Wrapper from "../../layout/wrapper/Wrapper";
+//import Wrapper from "../../layout/wrapper/Wrapper";
 import Map from "../../widget/GoogleMap/Map";
 //import ImageBox from "../../widget/ImageBox/ImageBox";
 //import EventBox from "../../widget/EventBox/EventBox";

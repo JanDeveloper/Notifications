@@ -31,7 +31,7 @@ const ServiceBox = (props) => {
                 <p className="time-s">{props.day}{", at"} {props.hour}</p>
                 <p className="content-s">
                     {props.content}...
-                    <Link to={`/activity#service${props.id}`}>Pročitaj više</Link>
+                    <Link to={`/activity#service${props.id}`}>više</Link>
 
                 </p>
             </div>

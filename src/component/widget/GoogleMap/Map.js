@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import GoogleMapReact from "google-map-react";
+//import MapView from "google-map-react";
+//import MapViewDirections from "google-map-react";
+
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
@@ -9,8 +12,8 @@ class Map extends Component {
             lat: 44.774049,
             lng: 20.41433
         },
-        zoom: 18
-    };
+        zoom: 18,
+        };
 
     render() {
         return (
@@ -26,6 +29,8 @@ class Map extends Component {
                         text={"Evandjeoska Crkva Banovo brdo"}
                     />
                 </GoogleMapReact>
+                
+
             </div>
         );
     }

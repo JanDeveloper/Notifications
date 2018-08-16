@@ -21,7 +21,7 @@ const EventBox = (props) => {
                 <h3 className="title">{props.title}</h3>
                 <p className="content">
                     {props.content}...
-                        <Link to={`/events#event${props.id}`}>Pročitaj više</Link>
+                        <Link to={`/events#event${props.id}`}>više</Link>
                 </p>
             </div>
         </div>

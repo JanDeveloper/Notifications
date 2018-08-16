@@ -8,7 +8,7 @@ import EventBox from "../../widget/EventBox/EventBox";
 import ServiceBox from "../../widget/ServiceBox/ServiceBox";
 import Grid from "@material-ui/core/Grid";
 import Footer from "../../layout/footer/Footer";
-import { Route, Router, Switch } from "react-router-dom";
+//import { Route, Router, Switch } from "react-router-dom";
 import EventNavBox from "../../widget/EventBox/EventNavBox";
 
 class Home extends Component {
@@ -44,7 +44,7 @@ class Home extends Component {
                             xs={12} 
                             sm={6}
                         >
-                            <h2 className="main-title">{"Dogadjaji"}</h2>
+                            <h2 className="main-title">{"Događaji"}</h2>
                            
                             {
                                this.props.data && this.props.data.events.slice(-4).map((event) => {
@@ -92,7 +92,7 @@ class Home extends Component {
                                         hour={service.hour}
                                         day={service.day}
                                         title={service.title} 
-                                        content={service.content.substr(0, 120)} 
+                                        content={service.content.substr(0, 100)} 
                                         id={service.id}
                                         photo={service.photo}
                                     />

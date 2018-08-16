@@ -70,10 +70,11 @@
     }
     &.humanity {
         background: url($imagesPath + "LoveGod_LoveOthers.jpg") center center no-repeat;
-        height: 600px;
+        height: 700px;
         background-size: cover;
         background-attachment: fixed;
         width: 100%;
+
     }
     &.contact {
         background: none;
@@ -113,7 +114,14 @@
     }
     &.activity {
         background: url($imagesPath + "worship.jpg") center center no-repeat;
-        height: 200px;
+        height: 500px;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+    }
+    &.event {
+        background: url($imagesPath + "worship.jpg") center center no-repeat;
+        height: 100px;
         background-size: cover;
         background-attachment: fixed;
         width: 100%;
