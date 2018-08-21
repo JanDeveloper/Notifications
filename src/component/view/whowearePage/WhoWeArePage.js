@@ -32,7 +32,7 @@ class WhoWeAre extends Component {
                 <Header page="whoWeAre" />
                 
                 <main style={{ marginBottom: 10 }}>
-                    <article>
+                    <article className="naslov">
                         <h1 className="naslov1">{"MESTO GDE SVAKO"}</h1>
                         <h1 className="naslov2">{"MOŽE NAĆI HRISTA"}</h1>
                     </article>

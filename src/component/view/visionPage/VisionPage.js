@@ -58,7 +58,6 @@ class Vision extends Component {
                         </Grid>
                     </Grid>
                 </main>
-                <Map/>
                 <Footer/>
             </section>
         );

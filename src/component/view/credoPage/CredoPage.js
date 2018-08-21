@@ -56,7 +56,6 @@ class Credo extends Component {
                         </Grid>
                     </Grid>
                 </main>
-                <Map/>
                 <Footer/>
             </section>
         );
