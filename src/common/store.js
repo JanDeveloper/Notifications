@@ -1,11 +1,9 @@
 import { applyMiddleware, combineReducers, createStore } from "redux";
 import loadingSpinner from "../services/loadingSpinner";
-import users from "../services/users";
 import thunk from "redux-thunk";
 
 const reducers = {
-    loadingSpinner,
-    users
+    loadingSpinner
 };
 
 const logger = store => next => action => {

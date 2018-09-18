@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import Notification from './Notification';
 
 const notifications = [
     {
@@ -31,33 +30,28 @@ const notifications = [
         expires: 5
     }];
 
-class Button extends Component {
-    constructor() {
-        super();
-        this.handleAddProject.bind(this);
-    }
-
+class Notification extends Component {
     state = {
-        itemArray: []
+        itemArray: {}
     };
 
-    handleAddProject = () => {
-        notifications.pop();
-        this.setState({
-            itemArray: notifications[0]
-        });
+    handleAddProject = (x) => {
+        this.setState({itemArray: x[0]});
+        notifications.shift();
     };
 
     render() {
         return (
             <div className="Overview">
                 <button onClick={() => this.handleAddProject(notifications)}>New Project</button>
-                <div>
-                <Notification itemArray={this.state.itemArray}/>
-                </div>
+                {this.state.itemArray &&
+                    <div>
+                        <p>{this.state.itemArray.id}</p>
+                    </div>
+                }
             </div>
         );
     }
 }
 
-export default Button;
+export default Notification;
