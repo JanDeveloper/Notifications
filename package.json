@@ -45,7 +45,7 @@
         "redux-thunk": "2.3.0",
         "reqwest": "2.0.5",
         "uglifyjs-webpack-plugin": "1.2.5",
-        "uuid": "^3.2.1",
+        "uuid": "^3.3.2",
         "webpack": "4.10.2",
         "webpack-command": "0.2.0",
         "webpack-dev-middleware": "3.1.3",
