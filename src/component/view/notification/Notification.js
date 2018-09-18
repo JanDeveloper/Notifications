@@ -44,10 +44,10 @@ class Notification extends Component {
         return (
             <div className="Overview">
                 <button onClick={() => this.handleAddProject(notifications)}>New Project</button>
-                {this.state.itemArray &&
+                {this.state.itemArray ?
                     <div>
                         <p>{this.state.itemArray.id}</p>
-                    </div>
+                    </div> : <p>{"There is no more notification"}</p>
                 }
             </div>
         );
